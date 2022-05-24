@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h2>Jogo da velha</h2>
+
+    <div id="tabuleiro">
+        <div id="esquerda1" class="campo esquerda"></div>
+        <div id="centro1" class="campo centro"></div>
+        <div id="direita1" class="campo direita"></div>
+        <div id="esquerda2" class="campo esquerda"></div>
+        <div id="centro2" class="campo centro"></div>
+        <div id="direita2" class="campo direita"></div>
+        <div id="esquerda3" class="campo esquerda"></div>
+        <div id="centro3" class="campo centro"></div>
+        <div id="direita3" class="campo direita"></div>
+    </div>
+
+    <p id="indicaVez">Vez do player <span id="player">1 = X</span></p>
+
+    <div id="placar">
+        <h3>Placar</h3>
+        <p><span class="pontos">0</span>&nbsp; Player 1 X Player 2 &nbsp;<span class="pontos">0</span></p>
+        
+    </div>
+
+    <div class="modal" id="modalVitoria" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h4 class="text-center"> <span id="alertaPlayer"></span></h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="btnFecharAlerta" onclick="finalizaRodada()" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="jogo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>

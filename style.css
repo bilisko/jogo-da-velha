@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#indicaVez{
+    color: green;
+    font-size: 1.3em;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tabuleiro{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+
+.campo{
+    width: 99px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+
+.esquerda{
+    border-right: 2px solid black;
+}
+
+.centro{
+    border-right: 2px solid black;
+}
+
+
+#esquerda1, #centro1, #direita1{
+    border-bottom: 2px solid black;
+}
+
+
+#esquerda2, #centro2, #direita2{
+    border-bottom: 2px solid black;
+}
+
+
+#placar{
+    margin: 10px auto;
+    width: 300px;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+#placar .pontos{
+
+    padding: 5px;
+    border: 1px solid green;
+}
