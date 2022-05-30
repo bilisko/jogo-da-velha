@@ -10,36 +10,38 @@
 </head>
 <body>
     
-    <h2>Jogo da velha</h2>
+    <div class="fundo">
+      <h2>Jogo da velha</h2>
+  
+      <div id="tabuleiro">
+          <div id="esquerda1" class="campo esquerda"></div>
+          <div id="centro1" class="campo centro"></div>
+          <div id="direita1" class="campo direita"></div>
+          <div id="esquerda2" class="campo esquerda"></div>
+          <div id="centro2" class="campo centro"></div>
+          <div id="direita2" class="campo direita"></div>
+          <div id="esquerda3" class="campo esquerda"></div>
+          <div id="centro3" class="campo centro"></div>
+          <div id="direita3" class="campo direita"></div>
+      </div>
+  
+      <p id="indicaVez">Vez do player <span id="player">1 = X</span></p>
+  
+      <div id="placar">
+          <h3>Placar</h3>
+          <p><span class="pontos">0</span>&nbsp; Player 1 X Player 2 &nbsp;<span class="pontos">0</span></p>
+          
+      </div>
 
-    <div id="tabuleiro">
-        <div id="esquerda1" class="campo esquerda"></div>
-        <div id="centro1" class="campo centro"></div>
-        <div id="direita1" class="campo direita"></div>
-        <div id="esquerda2" class="campo esquerda"></div>
-        <div id="centro2" class="campo centro"></div>
-        <div id="direita2" class="campo direita"></div>
-        <div id="esquerda3" class="campo esquerda"></div>
-        <div id="centro3" class="campo centro"></div>
-        <div id="direita3" class="campo direita"></div>
-    </div>
-
-    <p id="indicaVez">Vez do player <span id="player">1 = X</span></p>
-
-    <div id="placar">
-        <h3>Placar</h3>
-        <p><span class="pontos">0</span>&nbsp; Player 1 X Player 2 &nbsp;<span class="pontos">0</span></p>
-        
-    </div>
-
-    <div class="modal" id="modalVitoria" tabindex="-1">
+    </div> 
+    <div class="modal" id="modalVitoria" ata-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-body">
               <h4 class="text-center"> <span id="alertaPlayer"></span></h4>
             </div>
             <div class="modal-footer">
-              <button type="button" id="btnFecharAlerta" onclick="finalizaRodada()" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+              <button type="button" id="btnFecharAlerta" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
             </div>
           </div>
         </div>
